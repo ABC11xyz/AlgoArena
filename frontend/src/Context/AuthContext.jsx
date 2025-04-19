@@ -1,9 +1,11 @@
 import { createContext, useState, useContext, useEffect } from "react";
 import axios from "axios";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
+  
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [data, setData] = useState(null);
 
@@ -11,7 +13,7 @@ export const AuthContextProvider = ({ children }) => {
   const refreshAuth = async () => {
     try {
       const res = await axios.get(
-        "https://algoarena-gp5i.onrender.com/api/auth/verify",
+        "http://localhost:5000/api/auth/verify",
         {
           withCredentials: true,
         }
@@ -45,4 +47,5 @@ export const AuthContextProvider = ({ children }) => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuthContext = () => useContext(AuthContext);

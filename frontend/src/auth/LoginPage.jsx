@@ -15,7 +15,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       const res = await fetch(
-        "https://algoarena-gp5i.onrender.com/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         {
           method: "POST",
           credentials: "include",

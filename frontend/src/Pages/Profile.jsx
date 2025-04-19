@@ -39,7 +39,7 @@ const Profile = () => {
         setLoading(true);
         console.log("Fetching user data for id:", id);
         const res = await axios.get(
-          `https://algoarena-gp5i.onrender.com/api/profile/${id}`
+          `http://localhost:5000/api/profile/${id}`
         );
 
         // Set user data from response

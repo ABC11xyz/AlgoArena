@@ -158,7 +158,7 @@ export const verify = async (req, res) => {
     if (!user) {
       return res.json({ authenticated: false });
     }
-    res.json({ authenticated: true, user });
+    res.json({ authenticated: true, user : user });
   } catch (error) {
     res.json({ authenticated: false });
   }

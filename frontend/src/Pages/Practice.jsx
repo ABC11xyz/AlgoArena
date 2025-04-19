@@ -14,7 +14,7 @@ const PracticePage = () => {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(
-          "https://algoarena-gp5i.onrender.com/api/questions/practice"
+          "http://localhost:5000/api/questions/practice"
         );
         setQuestions(response.data);
       } catch (err) {

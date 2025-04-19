@@ -18,13 +18,13 @@ const CompetePage = () => {
         const [ongoingResponse, upcomingResponse, pastResponse] =
           await Promise.all([
             axios.get(
-              "https://algoarena-gp5i.onrender.com/api/contests/current"
+              "http://localhost:5000/api/contests/current"
             ),
             axios.get(
-              "https://algoarena-gp5i.onrender.com/api/contests/upcoming"
+              "http://localhost:5000/api/contests/upcoming"
             ),
             axios.get(
-              "https://algoarena-gp5i.onrender.com/api/contests/completed"
+              "http://localhost:5000/api/contests/completed"
             ),
           ]);
 

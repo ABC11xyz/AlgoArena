@@ -22,7 +22,7 @@ export const useProblemData = (id, setCode) => {
       }
 
       const response = await axios.get(
-        `https://algoarena-gp5i.onrender.com/api/questions/${id}`
+        `http://localhost:5000/api/questions/${id}`
       );
 
       if (response.status === 200 && response.data) {
@@ -47,7 +47,7 @@ export const useProblemData = (id, setCode) => {
   const getRandomProblems = async (contestId) => {
     try {
       const response = await fetch(
-        `https://algoarena-gp5i.onrender.com/api/contests/contest/${contestId}`
+        `http://localhost:5000/api/contests/contest/${contestId}`
       );
       const data = await response.json();
 
