@@ -37,7 +37,7 @@ export const useCodeSubmission = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/code/run-code",
+        "https://algoarena-ixlz.onrender.com/api/code/run-code",
         {
           method: "POST",
           credentials: "include",
@@ -129,7 +129,7 @@ export const useCodeSubmission = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/code/submit-code",
+        "https://algoarena-ixlz.onrender.com/api/code/submit-code",
         {
           method: "POST",
           credentials: "include",

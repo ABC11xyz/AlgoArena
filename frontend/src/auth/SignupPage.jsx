@@ -19,7 +19,7 @@ const SignupPage = () => {
     const signupData = { name, username, email, password, confirmpassword };
     try {
       const res = await fetch(
-        "http://localhost:5000/api/auth/signup",
+        "https://algoarena-ixlz.onrender.com/api/auth/signup",
         {
           credentials: "include",
           method: "POST",

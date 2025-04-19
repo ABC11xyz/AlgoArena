@@ -13,7 +13,7 @@ export const AuthContextProvider = ({ children }) => {
   const refreshAuth = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/auth/verify",
+        "https://algoarena-ixlz.onrender.com/api/auth/verify",
         {
           withCredentials: true,
         }

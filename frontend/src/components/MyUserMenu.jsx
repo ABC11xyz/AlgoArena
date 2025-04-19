@@ -38,7 +38,7 @@ const MyUserMenu = () => {
 
   const handleSignOut = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/auth/logout", {
+      const res = await fetch("https://algoarena-ixlz.onrender.com/api/auth/logout", {
         credentials: "include",
         method: "GET",
       });

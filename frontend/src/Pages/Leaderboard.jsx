@@ -13,7 +13,7 @@ const Leaderboard = () => {
     const fetchRank = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/contest/leaderboard/${contestId}`
+          `https://algoarena-ixlz.onrender.com/api/contest/leaderboard/${contestId}`
         );
         console.log("Data from backend", res.data);
         setRanks(res.data);

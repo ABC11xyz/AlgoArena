@@ -22,7 +22,7 @@ connectDB();
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://algo-arena-sigma.vercel.app",
     credentials: true,
     methods: ["GET", "POST"],
   })

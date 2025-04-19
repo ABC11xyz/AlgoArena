@@ -22,7 +22,7 @@ export const useProblemData = (id, setCode) => {
       }
 
       const response = await axios.get(
-        `http://localhost:5000/api/questions/${id}`
+        `https://algoarena-ixlz.onrender.com/api/questions/${id}`
       );
 
       if (response.status === 200 && response.data) {
@@ -47,7 +47,7 @@ export const useProblemData = (id, setCode) => {
   const getRandomProblems = async (contestId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/contests/contest/${contestId}`
+        `https://algoarena-ixlz.onrender.com/api/contests/contest/${contestId}`
       );
       const data = await response.json();
 
